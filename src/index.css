@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+/* scrollbar kecil */
+.scrollbar-sm {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(120, 120, 120, 0.4) transparent;
+}
+
+/* chrome, edge, safari */
+.scrollbar-sm::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.scrollbar-sm::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-sm::-webkit-scrollbar-thumb {
+  background-color: rgba(120, 120, 120, 0.4);
+  border-radius: 6px;
+}
+
+.scrollbar-sm::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(120, 120, 120, 0.7);
+}
